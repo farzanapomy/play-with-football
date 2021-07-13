@@ -5,30 +5,34 @@
 body{
     background-color: #ffffff;
     
+    
 }
 
 /* header section */
 .main-container{
     width: 1440px;
-    height: 677px;
+    height: 600px;
     display: flex;
     background-color: #2D25A0;
     justify-content: space-evenly;
-    padding: 35px;
+    padding-top: 100px;
 }
+
 .main-container h1{
     width: 485px;
-    height: 230px;
-    line-height: 80px;
     color: #ffffff;
-    font-size: 64px;
+    font-size: 75px;
 }
 .main-container h2{
     background-color: #E02C6D;
     width: 168px;
-    padding: 15px;
+    padding: 10px 24px;
+    color: #ffffff;
     text-align: center;
-    margin-left: 1px;
+    transition: transform 2s ease-in-out;
+}
+.main-container:hover h2 {
+    transform: rotate(360deg) scale(1.5); 
 }
 
 .main-container img{
@@ -41,19 +45,21 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4 , 1fr);
-    grid-row-gap: 30px;
+    grid-row-gap: 27px;
     grid-column-gap: 30px;
+    padding: 50px;
 }
 .player{
     width: 330px;
     height: 474px;
     padding: 15px 15px 33px 15px;
-    border: 2px solid black;
+   justify-content: center;
+    box-shadow: 30px 20px 50px rgb(248, 245, 245);
 }
 .players p{
     font-size: 16px;
 }
-.players h3{
+.player h3{
     font-size: 28px;
 }
 .player img{
