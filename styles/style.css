@@ -1,0 +1,33 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* common sections */
+body{
+    background-color: #ffffff;
+    
+}
+
+/* header section */
+.header{
+    display: flex;
+    background-color: #2D25A0;
+    justify-content: space-evenly;
+    padding: 35px;
+}
+.header h1{
+    width: 440px;
+   color: #ffffff;
+    font-size: 64px;
+}
+.header h2{
+    background-color: #E02C6D;
+    width: 168px;
+    padding: 15px;
+    text-align: center;
+    margin-left: 1px;
+}
+
+.header img{
+    width: 556px;
+    height: 438px;   
+}
