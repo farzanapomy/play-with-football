@@ -168,18 +168,13 @@ footer{
 
     }
    
-    .players ,.logo-section ,footer{
+    .players ,.logo-section{
         
         margin-left: 500px;
         display: grid;
         grid-template-columns: repeat(1,1fr);   
        }
 
-  .schedule{
-display:inline-grid;
-margin-left: 50px;
 
-  }
-   
     
 }
