@@ -189,27 +189,27 @@ footer{
 
 /* mobile device */
 
+
 @media only screen and (max-width:688px) {
    
-    .top-section , .player ,.schedule ,.logo-section ,footer{
+    .top-section , .player ,.schedule ,.logo-section ,footer , .blogs{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center; 
-        justify-content: center;
-        
+        justify-content: center;  
     }
    
     .players {
         margin-left: 500px;
-       
         display: grid;
         grid-template-columns: repeat(1,1fr);   
        }
-     .schedule ,.logo-section ,footer{
-           width: 100%;
+
+    .schedule ,.logo-section ,footer{
+        width: 100%;
         margin-left: 150px;
-       }
+    }
 
     .blogs{
         width: 100%;
@@ -221,15 +221,14 @@ footer{
 }
 /* ipad device */
 @media only screen and (min-width:688px) and (max-width:922px){
-    .top-section , .player  , footer {
-      
-       
+    .top-section , .player , .blog , footer {
         display: flex;
         flex-direction: column;
         align-items: center; 
         justify-content: center;
     }
-    .players {
+
+    .players ,.blogs{
         display: grid;
         grid-template-columns: repeat(2,1fr);   
        }
