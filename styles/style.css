@@ -5,23 +5,24 @@
 body{
     background-color: #ffffff;  
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.container{
+.container .grid-container {
     width: 1440px;
-    background-color: #2D25A0;
-    
-    
+    background-color: #ffffff;  
 }
 
 /* main container */
 
 
 .top-section{
+    background-color: #2D25A0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,13 +40,12 @@ main{
     width: 168px;
     padding: 10px 24px;
     color: #ffffff;
-
     transition: transform 2s ease-in-out;
 
 }
-/* .top-section:hover h2 {
+.top-section:hover h2 {
     transform: rotate(360deg) scale(1.5); 
-} */
+}
 
 .top-section img{
     width: 556.01px;
@@ -58,15 +58,13 @@ main{
 
 /* grid-container  */
 
-.players{
-    width: 1050px;
+.players{  
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4 , 1fr);
     grid-row-gap: 27px;
     grid-column-gap: 30px;
-    margin:70px 210px 165px 180px;
-    
+    margin:70px 210px 165px 180px;  
 }
 
 .player{
@@ -91,40 +89,97 @@ main{
 }
 
 
-footer{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* calender section */
+
+
+.calender {
+    width: 100%;
+    display: grid;
+    grid-template-columns:  repeat(7, 1fr);
+    grid-template-rows:  repeat(5, 1fr);
+    grid-gap: 2px;
+    font-size: 20px;
 }
-footer img{ 
-    width: 483px;
-    height: 110px;
+.schedule{
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px  20px 2px rgba(182, 179, 179, 0.384); 
+    display: flex;
+    justify-content: left;
+}
+.schedule:hover .calender :nth-child(2n+2){
+    color: red;
 }
 
+
+/* logo-section */
+
+
+.logo-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.logo-section img{
+    width: 400px;
+    height: 110px;
+}
+.social-icon{
+    
+    width: 32px;
+    height: 32px;
+    border-radius: 16px ;
+    color: gray;
+    margin: 0px 2px;  
+    background-color: gainsboro; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+/* footer  */
+footer{
+    display: flex;
+    justify-content: center;  
+}
+
+
+
+/* media queries */
+
+/* mobile device */
 
 @media only screen and (max-width:688px) {
    
-    .top-section{
+    .top-section , .player {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; 
+        justify-content: center;
         
+
     }
    
-    .players{
-        width: 100%;
+    .players ,.logo-section ,footer{
+        
+        margin-left: 500px;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-      
-       
-        
-    }
-    .player{
-        display: flex;
-     
-        
-    }
+        grid-template-columns: repeat(1,1fr);   
+       }
+
+  .schedule{
+display:inline-grid;
+margin-left: 50px;
+
+  }
+   
     
 }
