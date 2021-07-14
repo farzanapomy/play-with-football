@@ -6,6 +6,7 @@ body{
     background-color: #ffffff;  
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+    padding: 0px;
     
 }
 main{
@@ -125,8 +126,7 @@ main{
     width: 400px;
     height: 110px;
 }
-.social-icon{
-    
+.social-icon{ 
     width: 32px;
     height: 32px;
     border-radius: 16px ;
@@ -148,6 +148,7 @@ main{
 footer{
     display: flex;
     justify-content: center;  
+    align-items: center;
 }
 
 
@@ -158,22 +159,25 @@ footer{
 
 @media only screen and (max-width:688px) {
    
-    .top-section , .player {
+    .top-section , .player ,.logo-section , footer {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center; 
         justify-content: center;
-        
-
     }
    
-    .players ,.logo-section{
-        
+    .players {
         margin-left: 500px;
         display: grid;
         grid-template-columns: repeat(1,1fr);   
        }
+       /* .logo-section , footer{
+           width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        } */
 
 
     
