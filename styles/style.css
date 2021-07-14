@@ -6,7 +6,7 @@ body{
     background-color: #ffffff;  
     font-family: 'Poppins', sans-serif;
     margin: 0px;
-    padding: 0px;
+    /* padding: 0px; */
     
 }
 main{
@@ -27,7 +27,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 67px 140px 86px 156px; 
+    padding: 49px 140px 86px 156px; 
 }
 .title-section h1{
     width: 485px;
@@ -168,6 +168,8 @@ main{
     background-color: orange;
     padding: 20px;
 }
+
+
 /* footer  */
 footer{
     display: flex;
@@ -196,13 +198,14 @@ footer{
         display: grid;
         grid-template-columns: repeat(1,1fr);   
        }
-       .schedule ,.logo-section ,footer{
+    .schedule ,.logo-section ,footer{
            display: flex;
            flex-direction: column;
            justify-content: center;
            align-items: center;
         margin-left: 150px;
        }
+
     .blogs{
         width: 100%;
         display:grid;
@@ -210,4 +213,19 @@ footer{
         grid-template-rows: repeat(1,1fr);  
     }
     
+}
+/* ipad device */
+@media only screen and (min-width:688px) and (max-width:922px){
+    .top-section , .player  , footer {
+      
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);   
+       }
 }
