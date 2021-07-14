@@ -5,9 +5,7 @@
 body{
     background-color: #ffffff;  
     font-family: 'Poppins', sans-serif;
-    margin: 0px;
-    
-    
+    margin: 0px;  
 }
 main{
     display: flex;
@@ -27,22 +25,23 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 49px 140px 86px 156px; 
+    padding: 49px 100px 86px 156px; 
 }
+
 .title-section h1{
     width: 485px;
     color: #ffffff;
-    font-size: 64px;
-    
+    font-size: 64px;   
 }
+
 .title-section h2{
     background-color: #E02C6D;
     width: 168px;
     padding: 10px 24px;
     color: #ffffff;
     transition: transform 2s ease-in-out;
-
 }
+
 .top-section:hover h2 {
     transform: rotate(360deg) scale(1.5); 
 }
@@ -122,10 +121,12 @@ main{
     justify-content: center;
     align-items: center;  
 }
+
 .logo-section img{
     width: 400px;
     height: 110px;
 }
+
 .social-icon{ 
     width: 32px;
     height: 32px;
@@ -137,6 +138,7 @@ main{
     justify-content: center;
     align-items: center;
 }
+
 .social-icons{
     display: flex;
     flex-direction: row;   
@@ -156,15 +158,18 @@ main{
     padding: 10px;
     box-shadow: 5px 5px  20px 2px rgba(182, 179, 179, 0.384); 
 }
+
 .blog{
     display: flex; 
     flex-direction: column;
     padding: 15px 15px 33px 15px;
     box-shadow: 5px 5px  20px 2px rgba(182, 179, 179, 0.384);   
 }
+
 .blog h3{
     color: green;
 }
+
 .blog p{
     background-color: orange;
     padding: 20px;
