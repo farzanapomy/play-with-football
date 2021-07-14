@@ -27,8 +27,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 67px 140px 86px 156px;
-   
+    padding: 67px 140px 86px 156px; 
 }
 .title-section h1{
     width: 485px;
@@ -55,9 +54,9 @@ main{
 
 
 
-
-
 /* grid-container  */
+
+
 
 .players{  
     display: grid;
@@ -139,11 +138,36 @@ main{
 }
 .social-icons{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;   
 }
 
 
+/* blog section */
+
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-row-gap: 50px;
+    grid-column-gap: 30px;
+    margin:70px 100px 165px 100px;
+    padding: 10px;
+    box-shadow: 5px 5px  20px 2px rgba(182, 179, 179, 0.384); 
+}
+.blog{
+    display: flex; 
+    flex-direction: column;
+    padding: 15px 15px 33px 15px;
+    box-shadow: 5px 5px  20px 2px rgba(182, 179, 179, 0.384);   
+}
+.blog h3{
+    color: green;
+}
+.blog p{
+    background-color: orange;
+    padding: 20px;
+}
 /* footer  */
 footer{
     display: flex;
@@ -159,7 +183,7 @@ footer{
 
 @media only screen and (max-width:688px) {
    
-    .top-section , .player ,.logo-section , footer {
+    .top-section , .player  , footer {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -172,13 +196,18 @@ footer{
         display: grid;
         grid-template-columns: repeat(1,1fr);   
        }
-       /* .logo-section , footer{
-           width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        } */
-
-
+       .schedule ,.logo-section ,footer{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        margin-left: 150px;
+       }
+    .blogs{
+        width: 100%;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);  
+        grid-template-rows: repeat(1,1fr);  
+    }
     
 }
